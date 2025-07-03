@@ -9,8 +9,19 @@
     <style>
         body {
             background-color: #f2f6fc;
-            padding: 40px;
+            padding-top: 80px;
             font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
         }
         
         .info-card {
@@ -41,6 +52,27 @@
 
 <body>
 
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🩺 Doctor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="doctor.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Appointments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="patient_info.html">Patients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Remark</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prescription</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <!-- Patient Basic Info -->
         <div class="info-card">
@@ -56,7 +88,7 @@
 
         <!-- Patient History -->
         <div class="info-card">
-            <h4 class="info-title"> Patient History</h4>
+            <h4 class="info-title">📝 Patient History</h4>
             <div class="table-responsive">
                 <table class="table table-bordered history-table">
                     <thead class="text-center">
@@ -87,6 +119,13 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Doctor Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
